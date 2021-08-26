@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 
 const text = " 'text inserted'";
 const textColor = 'green';
-const inSession = false;
+const inSession = true;
+const varDefined = undefined;
 
 const JSXcode =
 <>
@@ -12,6 +13,7 @@ const JSXcode =
     <h3 className="title" style={{color: textColor, backgroundColor: 'lightblue'}}>
       React JSX inserting:{text}</h3>
     <p>logged Ok. </p>
+    {varDefined && <p>Var is defined so print it {varDefined}</p>}
   </div>
   :
   <p>NOT logged Ok. </p>
